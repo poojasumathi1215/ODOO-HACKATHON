@@ -1,0 +1,26 @@
+{
+  "name": "dayflow-database",
+  "version": "1.0.0",
+  "description": "DayFlow HRMS Production-Ready Database Layer (SQLite + better-sqlite3)",
+  "main": "database.js",
+  "scripts": {
+    "init": "node -e \"require('./database').initDatabase()\"",
+    "seed": "node seed.js",
+    "seed:force": "node seed.js --force",
+    "test": "node validate.js",
+    "validate": "node validate.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "bcryptjs": "^2.4.3"
+  },
+  "keywords": [
+    "dayflow",
+    "hrms",
+    "sqlite",
+    "better-sqlite3",
+    "database"
+  ],
+  "author": "DayFlow Architecture Team",
+  "license": "MIT"
+}
